@@ -1,5 +1,5 @@
- /* General Styles */
- body {
+  /* General Styles */
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
   /* Hero Section */
   .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('store-hero.jpg') no-repeat center center/cover;
     height: 100vh;
     color: white;
   }
@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .hero-content h1 {
@@ -37,66 +37,30 @@
     font-size: 1.2rem;
   }
 
-  /* Menu Section */
-  #menu .card {
+  /* Product Section */
+  #products .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  #menu .card:hover {
+  #products .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   }
 
-  #menu .card-title {
+  #products .card-title {
     font-size: 1.25rem;
     font-weight: bold;
   }
 
-  #menu .card-text {
+  #products .card-text {
     font-size: 0.9rem;
     color: #555;
   }
 
-  #menu .text-muted {
+  #products .btn {
     font-size: 1rem;
-    font-weight: bold;
-  }
-
-  /* About Us Section */
-  #about img {
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  #about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  #about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-  }
-
-  /* Contact Section */
-  #contact .form-control {
-    border-radius: 0.5rem;
-    box-shadow: none;
-    border: 1px solid #ddd;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  #contact .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-
-  #contact .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
   }
 
   /* Footer */
@@ -121,4 +85,74 @@
 
   .social-icons a:hover {
     color: #007bff;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+
+    #products .card-title {
+      font-size: 1rem;
+    }
+
+    #products .card-text {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 70vh;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .hero-content .btn {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+
+    #products .card {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero {
+      height: 60vh;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+
+    .hero-content .btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      font-size: 0.8rem;
+    }
+
+    .social-icons a {
+      font-size: 1.2rem;
+      margin: 0 5px;
+    }
   }
